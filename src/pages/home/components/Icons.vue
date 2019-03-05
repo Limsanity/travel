@@ -53,6 +53,7 @@ export default {
     // background-color green
   .icons
     margin-top .1rem
+    touch-action none
     .icon
       position relative
       overflow hidden

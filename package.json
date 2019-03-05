@@ -5,15 +5,18 @@
   "author": "Lim",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --fix --ext .js,.vue src",
     "build": "node build/build.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "better-scroll": "^1.14.1",
     "fastclick": "^1.0.6",
+    "koa": "^2.7.0",
+    "koa-static": "^5.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
