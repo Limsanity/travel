@@ -45,11 +45,9 @@ export default {
   },
   activated () {
     console.log(2)
-
   },
   deactivated () {
     console.log(3)
-
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
